@@ -1,0 +1,46 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block 'title' %} Dashboard {% endblock %}
+
+{% block 'head' %}
+<link href="{% static 'css/frontend.css' %}" rel="stylesheet">
+<link href="{% static 'css/base.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block 'body' %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Info</title>
+</head>
+<body>
+  <div class="change">
+    <h1>Informações do Usuário</h1>
+    {% if user_data %}
+      <ul>    
+        <li><strong>Nome de Usuário:</strong> {{ user_data.username }}</li>
+        <br>
+        <li>
+          <strong>Email:</strong> {{ user_data.email }}
+          <a href="{% url 'change_email' %}" class="alter">Alterar email</a>
+        </li>
+        <br>
+        <li><strong>Password:</strong> <input value="{{user_data.password}}" type="password" disabled class="password">
+          <a href="{% url 'change_password' %}" class="alter">Alterar Senha</a>
+        </li>
+        <br>
+        <form action="{% url 'delete_account' %}" method="POST">
+          {% csrf_token %}
+          <button type="submit" id="login-button">Delete Account</button>
+      </form>
+
+      </ul>
+    {% else %}
+        <p>Nenhum usuário encontrado.</p>
+    {% endif %}
+  </div>
+</body>
+</html>
+{% endblock %}

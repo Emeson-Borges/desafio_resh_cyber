@@ -1,0 +1,70 @@
+* {
+  margin : 0;
+  padding : 0;
+  border-box : box-sizing;
+}
+
+body{
+  background-color: #1C1A1A !important;
+}
+
+:root{
+   
+  --main-color: #2B2B2B;
+  --dark-color: #1C1A1A;
+  --contrast-color: #69D2CD;
+  --differential-color: #E96363;
+
+}
+header {
+  display : flex;
+  display: flex;
+  align-items: center;
+  justify-content : space-between;
+  background : #181821;
+  padding : 0 20px;
+}
+.menu a {
+  color : #fff;
+  text-decoration : none;
+  font-size : 15px;
+  margin-left : 20px;
+}
+.menu a:hover {
+  transition : color .2s;
+  color : #c75218;
+}
+.dropdown-submenu { 
+    background-color: #211f1e;
+}
+
+.dropdown-submenu:not(:first-child) {
+    border-top: 1px solid white;
+}
+
+.dropdown-submenu a {
+    color: white;
+}
+
+/* Estilos para os links dentro do menu */
+.menu-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #F8F8FF; /* Cor do texto */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o link ativo (quando o usuário estiver na página atual) */
+.menu-link.active {
+    background-color: #ff8c00; /* Cor de fundo do link ativo */
+}
+
+/* Estilos de hover (quando o cursor do mouse estiver sobre o link) */
+.menu-link:hover {
+    background-color: #333333; /* Cor de fundo em hover */
+}

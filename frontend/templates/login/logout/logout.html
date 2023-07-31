@@ -1,0 +1,21 @@
+{% block 'head' %}
+<link href="{% static 'css/frontend.css' %}" rel="stylesheet">
+<link href="{% static 'css/base.css' %}" rel="stylesheet">
+
+{% endblock %}
+<!-- No arquivo user_info.html ou onde você deseja exibir o botão de logout -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informações do Usuário</title>
+</head>
+<body>
+    <h1>Informações do Usuário</h1>
+    <!-- Exiba aqui as informações do usuário, como nome de usuário, email, etc. -->
+
+    <!-- Botão de logout -->
+    <a href="{% url 'logout' %}">Logout</a>
+        
+    
+</body>
+</html>

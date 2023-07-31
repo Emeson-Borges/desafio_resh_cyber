@@ -1,0 +1,226 @@
+/* Reset CSS */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+form,
+input,
+label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background: #c75218;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  filter: brightness(0.6);
+  transition: 0.4s;
+}
+
+.error-message {
+  color: #d63031;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.form-register {
+  background: #181821;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 40px;
+  border-radius: 6px;
+}
+.form-register h1 {
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.form-register label {
+  font-family: sans-serif;
+  color: #c1c1c1;
+  text-transform: uppercase;
+}
+#submit-button {
+  background: #c75218;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+#submit-button:hover {
+  filter: brightness(0.6);
+  transition: 0.4s;
+}
+#login-button {
+  background: #c75218;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+#login-button:hover {
+  filter: brightness(0.6);
+  transition: 0.4s;
+}
+.login {
+  border: 1px solid #c75218;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.login:hover {
+  background: #c75218;
+  transition: 0.2s linear;
+}
+.create {
+  border: 1px solid #c75218;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.create:hover {
+  background: #c75218;
+  transition: 0.2s linear;
+}
+.change {
+  background: #181821;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 40px;
+  border-radius: 6px;
+}
+.change h1 {
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.change label {
+  font-family: sans-serif;
+  color: #c1c1c1;
+  text-transform: uppercase;
+}
+.change ul li {
+  list-style-type: none;
+}
+.change ul strong {
+  color : #999;
+}
+.change ul li {
+  color : #fff;
+  font-family : sans-serif;
+}
+.change .alter {
+  border : 1px solid #c75218;
+  color : #999;
+  font-family : sans-serif;
+  text-decoration : none;
+  padding : 5px;
+  margin-left : 20px;
+  border-radius : 6px;
+}
+.change .alter:hover {
+  background : #c75218;
+  transition : .2s;
+  color : #fff;
+}
+.change .password {
+  border : #c75218;
+  color : #000;
+  font-family : sans-serif;
+  text-decoration : none;
+  padding : 5px;
+  border-radius : 6px;
+}
